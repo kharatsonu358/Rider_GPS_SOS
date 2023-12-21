@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">RiderGpsSOS</string>
+    <string name="search">Search</string>
+    <string name="Switch">Ride On</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+    <string name="action_sign_in">SIGN IN</string>
+
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <string name="Notification1">Ride Mode On</string>
+    <string name="checkable">On</string>
+    <string name="contact">First Contact</string>
+    <string name="contact2">Second Contact</string>
+    <string name="contact3">Third Contact</string>
+</resources>

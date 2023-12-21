@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MapActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/TBCon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/teal_700"
+        android:elevation="4dp"
+        android:navigationIcon="@drawable/ic_baseline_arrow_back_24"
+        android:pointerIcon="zoom_in">
+
+        <ImageButton
+            android:id="@+id/imgBtnMap"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_baseline_arrow_back_24"
+            android:background="@color/teal_700"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_marginLeft="10dp"
+            android:text="Map Navigation"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:paddingHorizontal="20dp"
+            />
+    </androidx.appcompat.widget.Toolbar>
+    <EditText
+        android:id="@+id/input_Source"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/input_design"
+        android:layout_margin="15dp"
+        android:hint="Enter Destination"
+        android:padding="20dp"
+        android:textColor="@color/ColorPrimaryDark"
+        android:textColorHint="@color/ColorPrimaryDark"
+        android:textSize="19sp"
+        />
+    <Button
+        android:id="@+id/BtnNavigate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/button_design"
+        android:padding="17dp"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:text="Navigate"
+        android:textColor="@android:color/white"/>
+
+
+
+
+
+</LinearLayout>

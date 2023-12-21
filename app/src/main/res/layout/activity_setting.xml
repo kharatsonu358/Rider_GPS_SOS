@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/TBSetting"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:background="@color/teal_700"
+        android:elevation="4dp"
+        android:navigationIcon="@drawable/ic_baseline_arrow_back_24"
+        android:pointerIcon="zoom_in">
+        <ImageButton
+            android:id="@+id/imgBtnSetting"
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:background="@color/teal_700"
+            android:src="@drawable/ic_baseline_arrow_back_24"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_marginLeft="10dp"
+            android:text="Setting"
+            android:paddingHorizontal="20dp"
+            android:textSize="15sp"/>
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/SetSwi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TBSetting"
+        android:text="Reject Calls with Message"
+        android:textSize="19sp"
+        android:padding="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+
+         />
+    <TextView
+        android:id="@+id/SetTxt1"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="Edit Message below"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/SetSwi"/>
+    <LinearLayout
+        android:id="@+id/llSetting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/SetTxt1"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="15dp">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etMessage"
+        android:layout_weight="1"
+        android:text="Can't Talk now,I am Riding a Bike"
+        android:textSize="19sp"
+        android:inputType="textMultiLine"
+
+        />
+    <Button
+        android:id="@+id/btnMessSave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:background="@drawable/button_design"
+        android:text="Save"
+        android:textColor="@color/black"
+        android:textSize="19sp" />
+    </LinearLayout>
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/SetSwi2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/llSetting"
+        android:text="Mute Notification"
+        android:textSize="19sp"
+        android:padding="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+         />
+
+
+</RelativeLayout>

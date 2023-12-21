@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".ConsoleActivity"
+    android:id="@+id/ConsoleLayout"
+    android:orientation="vertical"
+    >
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/TBCon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/teal_700"
+        android:elevation="4dp"
+        android:navigationIcon="@drawable/ic_baseline_arrow_back_24"
+        android:pointerIcon="zoom_in">
+
+        <ImageButton
+            android:id="@+id/imgBtnCon"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_baseline_arrow_back_24"
+            android:background="@color/teal_700"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_marginLeft="10dp"
+            android:text="Digital Console"/>
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/TBCon"
+        android:padding="20dp"
+        android:id="@+id/ConMainLL"
+        android:orientation="vertical">
+    <TextView android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/speedText"
+        android:text="00"
+        android:inputType="numberDecimal"
+        android:textColor="@color/teal_700"
+
+        android:textAlignment="center"
+        android:layout_marginTop="50dp"
+        android:textSize="80sp"
+
+        />
+    <TextView android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/speedMode"
+        android:text="Km/hr"
+        android:layout_below="@+id/speedText"
+        android:textAlignment="center"
+        android:layout_marginTop="5dp"
+        android:textSize="18sp"
+        android:textColor="@color/ColorPrimaryDark"
+        android:layout_marginVertical="5dp"
+
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ConLL1"
+        android:layout_below="@id/speedMode"
+        >
+
+    <TextView
+        android:id="@+id/txtTripA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/speedMode"
+        android:text="Trip A :"
+        android:textSize="19sp"
+        android:textColor="@color/ColorPrimaryDark"
+        android:layout_marginVertical="5dp"
+
+        />
+    <TextView
+        android:id="@+id/txtTripAVal"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="0.0"
+        android:textSize="19sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginVertical="5dp"
+        android:textColor="@color/design_default_color_on_secondary"
+        android:layout_below="@+id/speedMode"
+        android:layout_toRightOf="@+id/txtTripA"
+
+        />
+    <TextView
+        android:id="@+id/txtTripAKm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/speedMode"
+        android:layout_toRightOf="@+id/txtTripAVal"
+        android:text="Km"
+        android:textSize="19sp"
+        android:textColor="@color/ColorPrimaryDark"
+        android:layout_marginLeft="10dp"
+        android:layout_marginVertical="5dp"/>
+
+        <Button
+            android:id="@+id/btnTripA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/speedMode"
+            android:layout_marginVertical="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/txtTripAKm"
+            android:layout_weight="1"
+            android:background="@drawable/button_design"
+            android:text="S/R"
+            android:textColor="@color/black"
+            android:textSize="19sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/ConLL2"
+        android:layout_below="@id/ConLL1"
+        >
+    <TextView
+        android:id="@+id/txtTripB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtTripA"
+        android:text="Trip B :"
+        android:textSize="19sp"
+        android:textColor="@color/ColorPrimaryDark"
+        android:layout_marginVertical="5dp"
+
+        />
+    <TextView
+        android:id="@+id/txtTripBVal"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="0.0"
+        android:textSize="19sp"
+        android:textColor="@color/design_default_color_on_secondary"
+        android:layout_marginLeft="10dp"
+        android:layout_marginVertical="5dp"
+        android:layout_below="@+id/txtTripAVal"
+        android:layout_toRightOf="@+id/txtTripB"
+
+        />
+    <TextView
+        android:id="@+id/txtTripBKm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtTripA"
+        android:layout_toRightOf="@+id/txtTripBVal"
+        android:text="Km"
+        android:textSize="19sp"
+        android:textColor="@color/ColorPrimaryDark"
+        android:layout_marginLeft="10dp"
+        android:layout_marginVertical="5dp"/>
+
+        <Button
+            android:id="@+id/btnTripB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtTripA"
+            android:layout_marginVertical="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/txtTripAKm"
+            android:layout_weight="1"
+            android:background="@drawable/button_design"
+            android:text="S/R"
+            android:textColor="@color/black"
+            android:textSize="19sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/ConLL3"
+        android:layout_below="@id/ConLL2"
+        >
+        <TextView
+            android:id="@+id/TopSpeed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Top Speed:"
+            android:textSize="19sp"
+            android:textColor="@color/ColorPrimaryDark"
+            android:layout_marginVertical="5dp"
+
+            />
+        <TextView
+            android:id="@+id/TopSpeedVal"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="0.0"
+            android:textSize="19sp"
+            android:textColor="@color/design_default_color_on_secondary"
+            android:layout_marginLeft="10dp"
+            android:layout_marginVertical="5dp"
+            android:layout_below="@+id/txtTripAVal"
+            android:layout_toRightOf="@+id/txtTripB"
+
+            />
+        <TextView
+            android:id="@+id/TopSpeedValKm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Km/hr"
+            android:textSize="19sp"
+            android:textColor="@color/ColorPrimaryDark"
+            android:layout_marginLeft="10dp"
+            android:layout_marginVertical="5dp"/>
+
+        <Button
+            android:id="@+id/btnTopSpeedReset"
+            android:layout_width="159dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginVertical="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/txtTripAKm"
+
+            android:background="@drawable/button_design"
+            android:text="Reset"
+            android:textColor="@color/black"
+            android:textSize="19sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        android:id="@+id/ConLL5"
+        android:layout_below="@id/ConLL4"
+        >
+
+        <TextView
+            android:id="@+id/AccSpeed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginVertical="5dp"
+            android:text="Acc. 0 to 60km/hr:"
+            android:textColor="@color/ColorPrimaryDark"
+            android:textSize="19sp"
+
+            />
+    <TextView
+        android:id="@+id/AccSpeedVal"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="0.0"
+        android:textSize="19sp"
+        android:textColor="@color/design_default_color_on_secondary"
+        android:layout_marginLeft="10dp"
+        android:layout_marginVertical="5dp"
+
+
+        />
+    <TextView
+        android:id="@+id/AvgSpeedValKm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="sec"
+        android:textSize="19sp"
+        android:textColor="@color/ColorPrimaryDark"
+        android:layout_marginLeft="10dp"
+        android:layout_marginVertical="5dp"/>
+        <Button
+            android:id="@+id/btnAccSpeedStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="5dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/button_design"
+            android:text="S"
+            android:textColor="@color/black"
+            android:textSize="19sp" />
+
+    <Button
+        android:id="@+id/btnAccSpeedReset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="5dp"
+        android:layout_weight="1"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/button_design"
+        android:text="R"
+        android:textColor="@color/black"
+        android:textSize="19sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/ConLL4"
+        android:layout_below="@id/ConLL3"
+        >
+        <TextView
+            android:id="@+id/AvgSpeed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Average Speed:"
+            android:textSize="19sp"
+            android:textColor="@color/ColorPrimaryDark"
+            android:layout_marginVertical="5dp"
+
+            />
+        <TextView
+            android:id="@+id/AvgSpeedVal"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="0.0"
+            android:textSize="19sp"
+            android:textColor="@color/design_default_color_on_secondary"
+            android:layout_marginLeft="10dp"
+            android:layout_marginVertical="5dp"
+            android:layout_below="@+id/txtTripAVal"
+            android:layout_toRightOf="@+id/txtTripB"
+
+            />
+        <TextView
+            android:id="@+id/AccSpeedValKm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Km/hr"
+            android:textSize="19sp"
+            android:textColor="@color/ColorPrimaryDark"
+            android:layout_marginLeft="10dp"
+            android:layout_marginVertical="5dp"/>
+
+        <Button
+            android:id="@+id/btnAvgSpeedStart"
+            android:layout_width="124dp"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/txtTripAKm"
+            android:layout_weight="1"
+            android:background="@drawable/button_design"
+            android:text="S"
+            android:textColor="@color/black"
+            android:textSize="19sp" />
+        <Button
+            android:id="@+id/btnAvgSpeedReset"
+            android:layout_width="124dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginVertical="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/txtTripAKm"
+            android:background="@drawable/button_design"
+            android:text="R"
+            android:textColor="@color/black"
+            android:textSize="19sp" />
+    </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

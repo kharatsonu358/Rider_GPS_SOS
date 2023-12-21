@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".MainActivity"
+
+    >
+    <include
+        android:id="@+id/my_toolbar"
+        layout="@layout/appbar"/>
+    <LinearLayout android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/linear_layout_1"
+        android:orientation="horizontal"
+        android:layout_below="@+id/my_toolbar">
+        <TextView android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:id="@+id/txt1"
+            android:text="DIGITAL CONSOLE"
+            android:gravity="center"
+            android:textSize="25sp"
+
+            android:elevation="3dp"
+            android:textColor="@color/white"
+            android:layout_margin="5dp"
+            android:background="@drawable/button_design"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/txt2"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:elevation="3dp"
+            android:background="@drawable/button_design"
+            android:gravity="center"
+            android:text="MAP NAVIGATION"
+            android:textColor="@color/white"
+            android:textSize="25sp" />
+    </LinearLayout>
+    <LinearLayout android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+
+        android:id="@+id/linear_layout_2"
+        android:orientation="horizontal"
+        android:layout_below="@+id/linear_layout_1">
+        <TextView android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:id="@+id/txt3"
+            android:text="SOS SETUP"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:elevation="3dp"
+            android:textColor="@color/white"
+            android:layout_margin="5dp"
+            android:background="@drawable/button_design"
+            android:layout_weight="1"/>
+        <TextView android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:id="@+id/txt4"
+            android:text="ABOUT US"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:elevation="3dp"
+            android:textColor="@color/white"
+            android:layout_margin="5dp"
+            android:background="@drawable/button_design"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <androidx.appcompat.widget.SwitchCompat android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linear_layout_2"
+        android:id="@+id/ModeSwitch"
+        android:text="Ride Mode"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:elevation="3dp"
+        android:textColor="@color/white"
+        android:layout_margin="5dp"
+        android:background="@drawable/button_design"
+        />
+
+
+
+
+
+</RelativeLayout>
